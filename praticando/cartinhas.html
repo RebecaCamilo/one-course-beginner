@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabéns Rai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="cartinhas.html">Cartinhas</a>
+            <a class="cabecalho__menu__link" href="fotos.html">Nossas fotos</a>
+        </nav>
+    </header>
+    <main class="body">
+        <section class="card-container">
+            <div class="card" onclick="showMessage(this)">
+                <div class="hidden">
+                    <p>
+                        Você é uma daquelas pessoas raras que consegue transformar até os dias mais chatos em algo especial. Sua energia contagiante, seu senso de humor único e sua capacidade de iluminar qualquer ambiente são admiráveis. Te admiro por seu espírito livre, sua determinação e a forma como valoriza as amizades. Seu coração generoso e sua lealdade são verdadeiros tesouros. Por muito mais anos vendo doramas (sem spoiler, por favor) e fofocando da vida alheia Kkkk <br><br>
+                        Hoje é um dia muito especial, não só para você, mas também para todos nós que temos a sorte de ter alguém tão incrível como você em nossas vidas! Te desejo toda a felicidade do mundo, que este ano seja repleto de momentos emocionantes, risadas intermináveis, amores, sucesso e, é claro, muito moneeey. Que você continue sendo essa pessoa maravilhosa que alegra e inspira a vida de todos ao seu redor. <br><br>
+                        Feliz aniversário, minha amiga! Que seu dia seja tão incrível quanto você é!
+                    </p>
+                </div>
+                <div class="visible">De: Rebeca<br>Para: Raisa<br></div>
+            </div>
+            <div class="card" onclick="showMessage(this)">
+                <div class="hidden">
+                    <p>
+                        Feliz aniversário, minha amiga! Que seu dia seja tão incrível quanto você é!
+                    </p>
+                </div>
+                <div class="visible">De: Rebeca Vet<br>Para: Raisa<br></div>
+            </div>
+            <div class="card" onclick="showMessage(this)">
+                <div class="hidden">
+                    <p>
+                        Feliz aniversário, minha amiga! Que seu dia seja tão incrível quanto você é!
+                    </p>
+                </div>
+                <div class="visible">De: Victor<br>Para: Raisa<br></div>
+            </div>
+            <div class="card" onclick="showMessage(this)">
+                <div class="hidden">
+                    <p>
+                        Feliz aniversário, minha amiga! Que seu dia seja tão incrível quanto você é!
+                    </p>
+                </div>
+                <div class="visible">De: Giotto<br>Para: Raisa<br></div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Raisa 32</p>
+        <p>24/05/2024</p>
+    </footer>
+    
+    <script>
+        function showMessage(card) {
+            var hiddenMessage = card.querySelector('.hidden');
+            var visibleMessage = card.querySelector('.visible');
+        
+            hiddenMessage.classList.toggle('visible');
+            hiddenMessage.classList.toggle('hidden');
+        
+            visibleMessage.classList.toggle('visible');
+            visibleMessage.classList.toggle('hidden');
+        }
+        </script>
+</body>
+</html>
