@@ -112,3 +112,31 @@ img {
 .visible {
     display: block;
 }
+
+
+/* photos carousel */
+
+.carousel {
+    overflow: hidden;
+    white-space: nowrap; /* Evita que as imagens quebrem para a próxima linha */
+}
+
+.carousel img {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: top;
+}
+
+/* Animação do carousel */
+@keyframes carouselAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.carousel img {
+    animation: carouselAnimation 15s infinite linear; /* Velocidade e direção do carousel */
+}
