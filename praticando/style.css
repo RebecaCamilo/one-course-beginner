@@ -38,15 +38,26 @@
     text-decoration: underline;
 }
 
-.body {
-    /* height: 100vh; */
-    background-color: var(--cor-primaria);
+body {
     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.body {
+    background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
-    padding: 5% 8% ;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.main-content {
+    padding: 5% 8%;
+    flex: 1; /* Isso permite que a área principal ocupe todo o espaço disponível */
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .body__apresentacao {
@@ -139,4 +150,40 @@ img {
 
 .carousel img {
     animation: carouselAnimation 15s infinite linear; /* Velocidade e direção do carousel */
+}
+
+
+@media (max-width: 800px) {
+    .cabecalho {
+        padding: 8% 8%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .main-content {
+        flex-direction: column-reverse;
+        justify-content: start;
+        /* padding: 5%; */
+    }
+    
+    /* .apresentacao__conteudo {
+        width: auto;
+    } */
+
+    .card-container {
+        /* display: flex; */
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card {
+        width: calc(100% - 20px);
+    }
+
+    .carousel-content {
+        justify-content: center;
+    }
 }
